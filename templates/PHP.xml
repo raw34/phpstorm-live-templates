@@ -1,0 +1,213 @@
+<templateSet group="PHP">
+  <template name="?" value="&lt;?php $0$ ?&gt;" description="&lt;?php ... ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="/*" value="/**&#10; * $0$&#10; */" description="/* ... */" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="C" value="$_COOKIE['$0$']" description="$_COOKIE" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="SS" value="$_SESSION['$0$']" description="$_SESSION" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="E" value="$_ENV['$0$']" description="$_ENV" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="F" value="$_FILES['$0$']" description="$_FILES" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="G" value="$_GET['$0$']" description="$_GET" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="P" value="$_POST['$0$']" description="$_POST" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="R" value="$_REQUEST['$0$']" description="$_REQUEST" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="S" value="$_SERVER['$0$']" description="$_SERVER" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="class" value="/**&#10; * Class $0$&#10; * @author $1$&#10; */&#10;class $0$&#10;{&#10;&#9;$2$ function $4$($5$)&#10;&#9;{&#10;&#9;&#9;$6$&#10;&#9;}&#10;}" description="class" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="phpSuggestVariableName()" defaultValue="&quot;Randy Chang&quot;" alwaysStopAt="true" />
+    <variable name="2" expression="lowercaseAndDash(String)" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
+    <variable name="4" expression="lowercaseAndDash(String)" defaultValue="&quot;__construct&quot;" alwaysStopAt="true" />
+    <variable name="5" expression="phpSuggestVariableName()" defaultValue="&quot;$options&quot;" alwaysStopAt="true" />
+    <variable name="6" expression="lowercaseAndDash(String)" defaultValue="&quot;// code&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="f" value="function $0$($1$)&#10;{&#10;    $2$&#10;}" description="function name($param) { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="phpSuggestVariableName()" defaultValue="&quot;$param&quot;" alwaysStopAt="true" />
+    <variable name="2" expression="lowercaseAndDash(String)" defaultValue="&quot;return null;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($0$) {&#10;    $1$&#10;} else {&#10;    $2$&#10;}" description="if (/* condition */) { ... } else { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="el" value="else {&#10;    $0$&#10;}" description="else { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eif" value="else if ($0$) {&#10;    $1$&#10;}" description="else if (...) { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($0$) {&#10;    $1$&#10;}" description="if (/* condition */) { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="switch ($0$) {&#10;    case '$1$':&#10;        $2$&#10;        break;&#10;&#10;    default:&#10;        $3$&#10;        break;&#10;}" description="switch (...) {case '...': /* ... */ break;  default: /* ... */ break; }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="phpSuggestVariableName()" defaultValue="&quot;$variable&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="lowercaseAndDash(String)" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for ($0$ = 0; $0$ &lt; $1$; $0$$2$) {&#10;    $3$&#10;}" description="for ($i = 0; $i &lt; count; $i++) { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="phpSuggestVariableName()" defaultValue="&quot;$i&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="lowercaseAndDash(String)" defaultValue="&quot;count&quot;" alwaysStopAt="true" />
+    <variable name="2" expression="lowercaseAndDash(String)" defaultValue="&quot;++&quot;" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="wh" value="while ($0$) {&#10;    $1$&#10;}" description="while (...) { ... }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="try" value="try {&#10;    $0$&#10;} catch ($1$ $e) {&#10;}" description="try { ... } catch (\Exception $e) { }" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="lowercaseAndDash(String)" defaultValue="&quot;\\Exception&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pd" value="echo '&lt;pre&gt;'; var_dump($0$); echo '&lt;/pre&gt;';" description="echo '&lt;pre&gt;'; var_dump(...); echo '&lt;/pre&gt;';" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pdd" value="echo '&lt;pre&gt;'; var_dump($0$); echo '&lt;/pre&gt;'; die($1$);&#10;" description="echo '&lt;pre&gt;'; var_dump(...); echo '&lt;/pre&gt;'; die();" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vd" value="var_dump($0$);" description="var_dump(...);" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vdd" value="var_dump($0$); die($1$);&#10;" description="var_dump(...); die();" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ej" value="echo json_encode($0$);" description="echo json_encode(...);" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ejd" value="echo json_encode($0$); die($1$);" description="echo json_encode(...); die();" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pr" value="print_r($0$);" description="print_r(...);" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="prs" value="print_r($0$, true);" description="print_r(..., true);" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vdf" value="error_log(print_r($0$, true), 3, '$2$');" description="error_log(print_r(..., true), 3, '/tmp/debug.log');" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+    <variable name="2" expression="lowercaseAndDash(String)" defaultValue="&quot;/tmp/debug.log&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
