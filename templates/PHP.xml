@@ -106,7 +106,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="eif" value="else if ($0$) {&#10;    $1$&#10;}" description="else if (...) { ... }" toReformat="false" toShortenFQNames="true">
+  <template name="eif" value="elseif ($0$) {&#10;    $1$&#10;}" description="elseif (...) { ... }" toReformat="false" toShortenFQNames="true">
     <variable name="0" expression="lowercaseAndDash(String)" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
